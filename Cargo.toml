@@ -2,6 +2,11 @@
 name = "kiara"
 version = "0.1.0"
 edition = "2021"
+authors = ["Markus Binsteiner <markus@frkl.dev>"]
+description = "Wrapper for the Python version of kiara."
+homepage = "https://github.com/frkl-dev/kiara-rs"
+repository = "https://github.com/frkl-dev/kiara-rs"
+readme = "README.md"
 
 [lib]
 name = "kiara"
@@ -10,6 +15,9 @@ path = "src/lib.rs"
 [[bin]]
 name = "kiara"
 path = "src/cli.rs"
+
+[build-dependencies]
+static_vcruntime = "2.0"
 
 [dependencies]
 anyhow = "1.0.69"
