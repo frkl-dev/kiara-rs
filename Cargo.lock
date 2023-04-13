@@ -2129,6 +2129,7 @@ dependencies = [
  "directories",
  "serde",
  "serde_json",
+ "static_vcruntime",
  "term_size",
  "tokio",
  "tracing-subscriber",
@@ -4314,8 +4315,9 @@ checksum = "49874b5167b65d7193b8aba1567f5c7d93d001cafc34600cee003eda787e483f"
 
 [[package]]
 name = "viva"
-version = "0.0.1"
-source = "git+https://github.com/frkl-dev/viva?branch=develop#e86a24d066302261e72430641a8bdfd67f7fbfce"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "60f2d9360751fa1bf3537e2de53386e18398f2547b7fd238569894c34fb255fe"
 dependencies = [
  "anyhow",
  "bzip2",
